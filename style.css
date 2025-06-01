@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Cambria', sans-serif;
+    font-size: 24px;
+}
+
+
+body {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+header {
+    overflow: hidden;
+    background-color: white;
+}
+
+header img {
+    z-index: 10;
+    width: 10%;
+    float: left;
+}
+
+header img:last-child {
+    float: right;
+}
+h1 {
+    text-align: center;
+    float: left;
+    margin-top: 35px;
+    width: 80%;
+    font-size: 3.5vmax;
+    font-family: "Cambria";
+    text-decoration: underline yellow;
+}
+
+section article {
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    font-weight: bold;
+}
+
+iframe {
+    width: 90vw;
+    height: 70vh;
+    border-radius: .3em;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    margin-top:1rem;
+}
+
+footer {
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    
+}
+footer h3{
+    text-decoration: underline yellow;
+}
+footer article {
+    width: 30%;
+    margin-left: 2.5%;
+    float: left;
+    color: cornflowerblue;
+}
+
+footer article:last-child {
+    border-left-color: cornflowerblue;
+    border-left-style: solid;
+    border-left-width: thin;
+}
+
+footer article:first-child {
+    border-right-color: cornflowerblue;
+    border-right-style: solid;
+    border-right-width: thin;
+} 
+
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-youtube {
+	background: #E83028;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+#videoAnterior, #videoSiguiente {
+    position: fixed;
+    bottom: 1rem;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#videoAnterior {
+    left: 1.5rem;
+}
+
+#videoSiguiente {
+    right: 1.5rem;
+}
